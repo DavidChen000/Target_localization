@@ -1,0 +1,4 @@
+geometry_msgs/Point32 corner1
+geometry_msgs/Point32 corner2
+geometry_msgs/Point32 corner3
+geometry_msgs/Point32 corner4

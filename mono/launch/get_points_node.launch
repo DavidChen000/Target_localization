@@ -1,0 +1,23 @@
+<launch>
+    <node name="get_points_node" pkg="mono_location" type="get_points_node" output="screen">
+    </node>
+
+    <node name="corners_bag_record" pkg="rosbag" type="record" output="screen"
+          args="/mono_location/cornersInfo
+
+                /gimbal_control_node/gimbal_state
+
+                /mavros/global_position/global
+                /mavros/global_position/local
+                /mavros/home_position/home
+                /mavros/local_position/pose
+
+                /mavros_car/global_position/global
+                /mavros_car/global_position/local
+                /mavros_car/home_position/home
+                /mavros_car/local_position/pose
+                -o $(find mono_location)/bag/corners_bag/corners_data">
+    </node>
+
+
+</launch>
