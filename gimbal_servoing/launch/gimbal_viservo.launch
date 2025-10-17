@@ -1,0 +1,18 @@
+<launch>
+    <node name="gimbal_viservo_controller_node" pkg="gimbal_viservo" type="gimbal_viservo_controller_node" output="screen">
+    <!-- 0.35 \ 0.0\ 0.05\ 0.25\ 0.01\ 0.03\-->
+    <param name="yawP_" type="double" value="0.35"/> 
+    <param name="yawI_" type="double" value="0.0"/> 
+    <param name="yawD_" type="double" value="0.05"/> 
+    <param name="pitchP_" type="double" value="0.25"/> 
+    <param name="pitchI_" type="double" value="0.01"/> 
+    <param name="pitchD_" type="double" value="0.03"/> 
+    <param name="integralLimitX_" type="double" value="200.0"/> 
+    <param name="integralLimitY_" type="double" value="200.0"/> 
+        
+
+    </node>
+    
+    <!-- <node name="target_location_node" pkg="gimbal_servo" type="target_location_node" output="screen"/> -->
+
+</launch>

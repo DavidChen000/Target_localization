@@ -1,0 +1,7 @@
+*.a
+*.jpg
+scripts/ori_images/*
+scripts/results/*
+build/
+.vscode/
+*.bag

@@ -1,0 +1,6 @@
+<launch>
+    <!-- Launch node to run the YOLOv5 detection script -->
+    <node name="detect" pkg="yolov5" type="detect.py" output="screen"/>
+    <!-- Launch node to record all topics -->
+    <node pkg="rosbag" type="record" name="rosbag_record" output="screen" args="-a"/>
+</launch>

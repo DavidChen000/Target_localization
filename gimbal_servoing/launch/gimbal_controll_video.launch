@@ -1,0 +1,8 @@
+<launch>
+
+    <node name = "gimbal_control_node" pkg = "gimbal_viservo" type = "gimbal_control_node.py" output = "screen"/>
+    <node name = "video_cap_node" pkg = "yolov5_new" type = "video_cap_node.py" output = "screen"/>
+    <!-- <node name = "target_detect_node"  pkg = "yolov5_new" type = "miniA8_detect_node.py" output = "screen"/> -->
+
+
+</launch>

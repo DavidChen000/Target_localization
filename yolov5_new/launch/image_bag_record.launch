@@ -1,0 +1,28 @@
+<launch>
+
+  <node name ="bag_record" pkg="rosbag" type="record" output="screen"
+        args ="
+        /yolo/color_raw
+        /yolo/depth_raw
+        /yolo/color_image
+        /yolo/detectBox
+        /yolo/vision_info
+
+        /mavros/global_position/global
+        /mavros/global_position/local
+        /mavros/home_position/home
+        /mavros/local_position/pose
+        /mavros/local_position/velocity_local
+        /mavros/state
+
+        /mavros_car/global_position/global
+        /mavros_car/global_position/local
+        /mavros_car/home_position/home
+        /mavros_car/local_position/pose
+        /mavros_car/local_position/velocity_local
+        /mavros_car/state
+
+         -o $(find yolov5)/image_bag/data">
+  </node>
+
+</launch>

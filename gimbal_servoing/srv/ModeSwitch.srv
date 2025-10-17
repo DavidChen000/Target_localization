@@ -1,0 +1,13 @@
+#1:Angular speed control 
+#2:Angle and angular speed control 
+#3:Request home postion
+
+uint8 mode
+int16 exp_yaw
+int16 exp_pitch
+
+ #exp_yaw [int]: -1350~0~1350(-135.0°~0°~135.0°): 
+ #exp_pitch [int]: -900~0~250(-90.0°~0°~25.0°): 
+---
+bool success
+string message
