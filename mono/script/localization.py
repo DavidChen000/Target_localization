@@ -417,11 +417,8 @@ if __name__ == '__main__':
     rate = rospy.Rate(20)
 
     # -----Configure the bag file path and target topic------
-    # corners_data_2024-12-05-11-20-44.bag\corners_data_2024-12-05-11-27-20.bag\corners_data_2024-12-05-11-23-53.bag
-    # corners_data_2024-12-24-14-18-03.bag\corners_data_2024-12-24-14-18-33.bag(jingzhi)\corners_data_2024-12-24-14-19-13.bag
-    # corners_data_2025-01-17-16-34-10.bag\corners_data_2025-01-17-16-49-55.bag\corners_data_2025-01-17-16-52-16.bag
 
-    bag_file = '/home/davidwsl/test_ws/src/mono_location/bag/corners_bag/corners_data_2025-01-17-16-34-10.bag'
+    bag_file = '~.bag'
     corner_topic = '/mono_location/cornersInfo'
     gimbal_topic = '/gimbal_control_node/gimbal_state'
     home_topic = '/mavros/home_position/home'
